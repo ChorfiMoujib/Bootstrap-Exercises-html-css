@@ -1,0 +1,45 @@
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 150px;
+    background-color: #afaaaa;
+    overflow: hidden;
+  }
+  
+  .image-container.square {
+    border-radius: 0;
+  }
+  
+  .image-container.rounded-corner {
+    border-radius: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2);
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .bg-gray {
+    background-color: #f2f2f2;
+  }
+  
